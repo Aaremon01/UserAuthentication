@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #242842;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f3f6;
+    color: #242842;
+}
+.header-buttons {
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #f0f3f6;
+    color: #046d9e;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+
+/*background image*/
+.intro-section {
+    background: url('introbg.jpg') no-repeat center center/cover;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.intro-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+}
+
+.intro-content {
+    z-index: 1;
+}
+
+.intro-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.intro-content button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #046d9e;
+    color: #fff;
+    border-radius: 5px;
+}
+/*    */
+.tagline-section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 50px;
+}
+
+.tagline-section h2 {
+    font-size: 48px;
+    color: #242842;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tagline-section p {
+    font-size: 24px;
+    color: #242842;
+    font-weight: bold;
+}
+
+.learning-limits-section {
+    padding: 50px;
+    background-color: #f0f3f6;
+    text-align: center;
+}
+
+.learning-limits-section h2 {
+    font-size: 36px;
+    color: #242842;
+    margin-bottom: 20px;
+}
+
+.learning-limits-section p {
+    font-size: 16px;
+    color: #242842;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+/*
+.intro-section {
+    background: url('intro-background.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.intro-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro-content button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1em;
+}
+*/
+.intro-content button:hover {
+    background-color: #0056b3;
+}
+
+.about-us, .objectives, .services {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.about-us .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.about-us .text {
+    width: 45%;
+    text-align: left;
+}
+
+.about-us .text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us .text ul li {
+    margin: 10px 0;
+}
+
+.about-us .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us .images img {
+    width: 300px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.objectives .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.objectives ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    width: 60%;
+}
+
+.objectives ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.objectives img {
+    width: 30%;
+    height: auto;
+}
+
+.services .container {
+    margin: 0 20px;
+}
+
+.services .service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .service {
+    width: 23%;
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.services .service img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.services .service h3 {
+    margin: 0;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.services .service p {
+    font-size: 1em;
+}
+
+footer {
+    background-color: #242842;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
